@@ -17,10 +17,6 @@ const applicationSchema = mongoose.Schema(
       minLength: 3,
       required: true
     },
-    lien: {
-      type: String,
-      required: true
-    },
     date: {
       type: Date,
       default: Date.now

@@ -2,15 +2,15 @@ import React from 'react';
 
 const ApplicationCard = ({ application, onDelete }) => {
   const statusColors = {
-    'En attente': '#ffb347', /* Orange pastel */
-    'Acceptée': '#77dd77',   /* Vert pastel */
-    'Refusée': '#ff6961'     /* Rouge pastel */
+    'En attente': '#ffb347', 
+    'Acceptée': '#77dd77',   
+    'Refusée': '#ff6961'     
   };
 
   return (
     <div className="card">
       <h3 style={{ 
-        color: '#ff85a2', /* Rose */
+        color: '#ff85a2', 
         marginTop: 0 
       }}>
         {application.entreprise}

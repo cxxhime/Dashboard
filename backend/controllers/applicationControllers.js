@@ -57,7 +57,6 @@ export const updateApplication = async (req, res) => {
 };
 
 
-
 export const relaunchApplication = async (req, res) => {
   try {
     const datelimite = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000);
@@ -78,10 +77,11 @@ export const relaunchApplication = async (req, res) => {
   }
 };
 
-export const getStats = async (req, res) => {
+
+export const getStats = async (_, res) => {
   try {
     const stats = await ModelApplication.aggregate([
-      { $group: { _id: "$status", count: { $sum: 1 } } } 
+      { $group: { _id: "$status", count: { $sum: 1 } } }
     ]);
     res.status(200).json(stats);
   } catch (error) {

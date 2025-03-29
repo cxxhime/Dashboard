@@ -1,5 +1,7 @@
+// Ajout pour le fun !!!!
+
 import { useState } from 'react';
-import './Mascotte.css'; // Fichier CSS à créer
+import './Mascotte.css'; 
 
 const Mascotte = () => {
   const [heureuse, setHeureuse] = useState(false);
@@ -30,7 +32,6 @@ const Mascotte = () => {
         className={`mascotte ${heureuse ? 'saute' : ''}`} 
         onClick={cliquerMascotte}
       >
-        {/* Visage de chat-kawaii */}
         <div className="tete-mascotte">
           <div className="yeux">
             <div className="oeil"></div>

@@ -4,31 +4,30 @@ import "../App.css";
 
 const Form = () => {
   const navigate = useNavigate();
-  const [candidature, setCandidature] = useState({
+  const [application, setApplication] = useState({
     entreprise: "",
     offer: "",
     lien: "",
     date: "",
-    statut: "En attente",
-    dateRelance: "",
+    status: "En attente",
+    relaunchDate: "",
   });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setCandidature((prev) => ({ ...prev, [name]: value }));
+    setApplication(prev => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:3000/api/candidatures/add", {
+      const response = await fetch("http://localhost:3000/api/applications/add", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(candidature),
+        body: JSON.stringify(application),
       });
-
       if (!response.ok) throw new Error("Erreur lors de l'envoi");
-      alert("Candidature ajoutée !");
+      alert("Application ajoutée !");
       navigate("/");
     } catch (error) {
       console.error("Erreur:", error);
@@ -43,26 +42,26 @@ const Form = () => {
           <h2>Ajouter une candidature</h2>
           <form onSubmit={handleSubmit}>
             <label>Entreprise</label>
-            <input name="entreprise" value={candidature.entreprise} onChange={handleChange} required />
+            <input name="entreprise" value={application.entreprise} onChange={handleChange} required />
 
             <label>Poste</label>
-            <input name="offer" value={candidature.post} onChange={handleChange} required />
+            <input name="offer" value={application.offer} onChange={handleChange} required />
 
-            <label>Lien de l’offre</label>
-            <input name="lien" value={candidature.lien} onChange={handleChange} />
+            <label>Lien de l'offre</label>
+            <input name="lien" value={application.lien} onChange={handleChange} />
 
-            <label>Date de candidature</label>
-            <input type="date" name="date" value={candidature.date} onChange={handleChange} required />
+            <label>Date</label>
+            <input type="date" name="date" value={application.date} onChange={handleChange} required />
 
             <label>Statut</label>
-            <select name="statut" value={candidature.statut} onChange={handleChange}>
+            <select name="status" value={application.status} onChange={handleChange}>
               <option value="En attente">En attente</option>
               <option value="Acceptée">Acceptée</option>
               <option value="Refusée">Refusée</option>
             </select>
 
             <label>Date de relance</label>
-            <input type="date" name="dateRelance" value={candidature.dateRelance} onChange={handleChange} />
+            <input type="date" name="relaunchDate" value={application.relaunchDate} onChange={handleChange} />
 
             <button type="submit">Valider</button>
           </form>
@@ -73,4 +72,3 @@ const Form = () => {
 };
 
 export default Form;
-

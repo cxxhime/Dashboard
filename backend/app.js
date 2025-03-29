@@ -14,6 +14,6 @@ app.use(express.json());
 app.use(cors());
 
 // PREFIX 
-app.use('/api/candidatures', applicationRouter);
+app.use('/api/applications', applicationRouter);
 
 export default app;
