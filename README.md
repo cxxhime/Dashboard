@@ -1,9 +1,9 @@
-# 📝Suivi de Candidatures by Nana CHEN & Ava MOUSAVI ✨
+## 📝Suivi de Candidatures by Nana CHEN & Ava MOUSAVI ✨
 
 ###### Une application web complète pour gérer vos candidatures de stage et alternance, parfait pour les étudiants.
 Ne vous perdez plus dans tout vos candidatures !
 
-## Fonctionnalités principales
+### Fonctionnalités principales
 #### Gestion des candidatures
 - ✅ Ajout/modification/suppression des candidatures
 
@@ -18,7 +18,7 @@ Ne vous perdez plus dans tout vos candidatures !
 
 - 🔍 Recherche et tri des candidatures
 
-## Technologies utilisées
+### Technologies utilisées
 #### Frontend
 React.js 18
 Vite (build tool)
@@ -30,7 +30,7 @@ Node.js / Express
 MongoDB (avec Mongoose)
 API RESTful
 
-## Installation
+### Installation
 #### Prérequis
 Node.js (v18+)
 MongoDB (local ou Atlas)
@@ -48,21 +48,7 @@ npm install
 npm run dev
 L'application sera disponible sur http://localhost:5173
 
-## Structure du projet
-.
-├── backend
-│   ├── controllers/    # Logique métier
-│   ├── models/         # Schémas MongoDB
-│   ├── routes/         # Définition des routes
-│   └── app.js          # Configuration serveur
-└── frontend
-    ├── src/
-    │   ├── components/ # Composants réutilisables
-    │   ├── pages/      # Vues principales
-    │   ├── services/   # Appels API
-    │   └── App.css     # Styles globaux
-
-## Contribution
+### Contribution
 Les contributions sont les bienvenues ! Voici comment procéder :
 
 1. Forker le projet
@@ -71,10 +57,10 @@ Les contributions sont les bienvenues ! Voici comment procéder :
 4. Pousser vers la branche (git push origin feature/ma-nouvelle-fonctionnalite)
 5. Ouvrir une Pull Request
 
-## Licence
+### Licence
 MIT License - Libre d'utilisation et de modification
 
-## Auteur
+### Auteur
 Nana CHEN - cxxnana@gmail.com - [LinkedIn](https://www.linkedin.com/in/cxxhime/)
 Ava MOUSAVI - avamou - [LinkedIn]([https://www.linkedin.com/in/cxxhime/](https://www.linkedin.com/in/seyedeh-ava-mousavi-4501a6334/))
 
