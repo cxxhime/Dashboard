@@ -62,5 +62,5 @@ MIT License - Libre d'utilisation et de modification
 
 ### Auteur
 Nana CHEN - cxxnana@gmail.com - [LinkedIn](https://www.linkedin.com/in/cxxhime/) <br>
-Ava MOUSAVI - avamousavi@gmail.com - [LinkedIn]([https://www.linkedin.com/in/cxxhime/](https://www.linkedin.com/in/seyedeh-ava-mousavi-4501a6334/))
+Ava MOUSAVI - avamousavi@gmail.com - [LinkedIn](https://www.linkedin.com/in/seyedeh-ava-mousavi-4501a6334/))
 
