@@ -21,41 +21,41 @@ Ne vous perdez plus dans tout vos candidatures !
 
 ### Technologies utilisées
 #### Frontend
-React.js 18
-Vite (build tool)
-CSS moderne (Flexbox/Grid)
+React.js 18 <br>
+Vite (build tool) <br>
+CSS moderne (Flexbox/Grid) <br>
 Axios pour les requêtes API
 
 #### Backend
-Node.js / Express
-MongoDB (avec Mongoose)
-API RESTful
+Node.js / Express <br>
+MongoDB (avec Mongoose) <br>
+API RESTful 
 
 ### Installation
 #### Prérequis
-Node.js (v18+)
+Node.js (v18+) <br>
 MongoDB (local ou Atlas)
 
 #### Configuration
 ##### Backend :
-cd backend
-npm install
-cp .env.example .env
+cd backend 
+npm install <br>
+cp .env.example .env <br>
 npm start
 
 ##### Frontend :
-cd frontend
-npm install
-npm run dev
+cd frontend 
+npm install <br>
+npm run dev <br>
 L'application sera disponible sur http://localhost:5173
 
 ### Contribution
 Les contributions sont les bienvenues ! Voici comment procéder :
 
-1. Forker le projet
-2. Créer une branche (git checkout -b feature/ma-nouvelle-fonctionnalite)
-3. Committer vos changements (git commit -am 'Ajout d'une super fonctionnalité')
-4. Pousser vers la branche (git push origin feature/ma-nouvelle-fonctionnalite)
+1. Forker le projet <br>
+2. Créer une branche (git checkout -b feature/ma-nouvelle-fonctionnalite) <br>
+3. Committer vos changements (git commit -am 'Ajout d'une super fonctionnalité') <br>
+4. Pousser vers la branche (git push origin feature/ma-nouvelle-fonctionnalite) <br>
 5. Ouvrir une Pull Request
 
 ### Licence
